@@ -1,0 +1,62 @@
+h1{
+    color: blue ;
+    background-color: pink;
+    border: 5px solid goldenrod;
+    border-radius: 50px;
+    margin: 30px;
+    text-align: center;
+    padding: 40px;
+
+}
+
+
+
+.classa{
+    color: red ;
+    background-color: thistle;
+}
+
+
+.classb{
+    color: rgb(255, 0, 195) ;
+}
+
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#main-heading{
+    text-decoration:dotted underline ;
+}
+
+
+ p,h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}   
+
+
+a:hover{
+    color:red;
+}
+
+p::first-line {
+    color: blueviolet;
+}
+
+
+p::before{
+    content:"Ipportaant : ";
+    color: red;
+    font-weight: bolder;
+
+}
+
+p::after {
+    content: " ✔";
+    color: green; }

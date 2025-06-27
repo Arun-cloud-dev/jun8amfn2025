@@ -1,0 +1,35 @@
+h1{
+    color: #00ff00;
+}
+
+
+
+h2{
+    color: hsl(61, 90%, 47%);
+}
+
+/* 
+div{
+    background-image: url("./react-query1721251933.logowik.com.webp");
+} */
+/* 
+div{
+    background: radial-gradient(circle, rgb(114, 114, 239), rgb(231, 231, 148));
+} */
+
+/* div{
+   
+    background: linear-gradient(to right ,orange, white, green);
+}
+ */
+
+
+/* 
+ div{
+    background-image: url("./react-query1721251933.logowik.com.webp"), linear-gradient(to bottom, #fff, #ccc);
+ } */
+
+ /* body{
+    background-image: url(./react-query1721251933.logowik.com.webp);
+    background-repeat: repeat-y;
+ } */

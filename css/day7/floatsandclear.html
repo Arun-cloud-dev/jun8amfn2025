@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .float-left {
+            float:left;
+            width: 50%;
+            height: 40px;
+            background-color: #f75b5b;
+            margin-right: 20px;
+        }
+
+
+        .clearfix::after {
+            content: "asdasd asdfa asd";
+            display: table;
+            clear: both;
+            background-color: #f75b5b;
+        }
+
+
+        .flex-container {
+            display: flex;
+            border: 3px solid #000;
+            margin: 20px;
+        }
+        .flex-item{
+            background-color: rgb(112, 212, 246);
+            padding: 20px;
+            margin: 10px;
+            color:black;
+            text-align: center;
+            flex: 1; /* This allows the items to grow and shrink equally */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="float-left">I am floating left</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium atque, tempore amet veritatis tempora? Placeat doloremque maxime dicta adipisci tempora! Officiis accusantium debitis veniam quis sed dolores maxime doloremque laborum, repellendus esse iusto quaerat illum dicta tempore repellat consequuntur laudantium autem inventore assumenda eveniet tempora vel. Autem iusto deleniti alias facilis beatae temporibus soluta earum consequuntur corporis. Necessitatibus inventore harum omnis veritatis est dolorem similique laudantium!</p>
+    </div>
+
+
+   <div class="flex-container">
+    <div class="flex-item">Item1</div>
+    <div class="flex-item">Item2</div>
+    <div class="flex-item">Item3</div>
+   </div>
+
+
+</body>
+</html>

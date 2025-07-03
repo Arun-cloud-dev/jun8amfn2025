@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'menu main main'
+                'menu footer footer';
+            grid-template-columns: 150px 1fr 1fr;
+            grid-template-rows: 60px 200px 60px;
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .menu {
+            grid-area: menu;
+            background: #555;
+            color: white;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background: #777;
+            color: white;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #999;
+            color: white;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

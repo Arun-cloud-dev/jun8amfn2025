@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+</head>
+
+<!-- <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(45, 1fr); /* 3 equal columns */
+        gap: 10px; /* Space between grid items */
+        padding: 20px; /* Padding around the grid */
+    }
+
+    .grid-item {
+        background-color: #f75b5b; /* Background color for grid items */
+        padding: 20px; /* Padding inside each grid item */
+        text-align: center; /* Center text inside grid items */
+        color: white; /* Text color */
+    }
+</style> -->
+
+
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns:200px 1fr 1fr;
+        grid-template-rows: 100px 200px 50px 600px;
+        gap: 10px; /* Space between grid items */
+        padding: 20px; /* Padding around the grid */
+        background: #424040;
+    }
+
+    .grid-item{
+        background: #fff1f1;
+        padding: 20px;
+        text-align: center; /* Center text inside grid items */
+        color: tomato; /* Text color */
+        border: 5px solid #000; /* Optional: Add a border to grid items */
+    }
+</style>
+
+
+<body>
+    
+
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+</div>
+
+</body>
+</html>

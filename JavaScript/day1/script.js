@@ -126,10 +126,10 @@
 
 
 
-const ff = 684565465464654564564654565665564n; // bigint
+// const ff = 684565465464654564564654565665564n; // bigint
 
 
-console.log(ff+1n);
+// console.log(ff+1n);
 
 
 

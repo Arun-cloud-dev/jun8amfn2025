@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"> My to-do List</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter a task ">
+    <button onclick="addTask()" >Add task </button>
+    <!-- <button onclick="">remove button </button> -->
+
+
+    <ul id="tasks">
+ 
+    </ul>
+
+    <script>
+        document.getElementById("title").style.color = "yellowgreen"
+
+
+
+        function addTask(){
+            let input = document.getElementById('taskInput');
+            let taskText = input.value;
+
+
+
+            if(taskText === ""){
+                alert("please enter a task")
+                return
+            }
+
+
+            let li = document.createElement('li');
+            li.innerText= taskText;
+
+
+            //add a remove buton ;
+
+            let removeBtn = document.createElement("button");
+            removeBtn.innerText= "Remove"
+            removeBtn.style.marginLeft = "10px";
+
+
+            removeBtn.addEventListener('click', function(){
+                li.parentNode.removeChild(li)
+            });
+
+
+            li.appendChild(removeBtn)
+
+            document.getElementById("tasks").appendChild(li)
+
+            input.value= ""
+        }
+    </script>
+</body>
+</html>

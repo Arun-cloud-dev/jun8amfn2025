@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Input Value Attribute Update</title>
+</head>
+
+<body>
+  <h2>Input Listener with Value Attribute</h2>
+  <input type="text" id="nameInput" placeholder="Type here...">
+  <p id="output"></p>
+
+  <script>
+    let input = document.getElementById("nameInput");
+    let output = document.getElementById("output");
+
+    input.addEventListener("input", function () {
+      // Show live value
+      output.innerText = "Live value: " + input.value;
+
+      // ALSO update the HTML attribute
+      input.setAttribute("value", input.value);
+    });
+  </script>
+</body>
+
+</html>

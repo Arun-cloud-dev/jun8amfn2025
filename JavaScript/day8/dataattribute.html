@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn" data-user-id="123"  data-role="admin">
+        click me
+    </button>
+
+
+
+    <script>        
+        const btn = document.getElementById("myBtn");
+        const userId = btn.getAttribute("data-user-id");
+
+        const role = btn.dataset.role; //shortcut to get the attriblurte value 
+
+
+
+
+
+        alert(userId);
+        console.log(role)
+    </script>
+</body>
+</html>
